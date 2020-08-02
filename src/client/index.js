@@ -1,11 +1,12 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
 import { getAylienAnalysis } from './js/getAlyien'
+import { validate } from './js/validation'
 
 import './styles/resets.scss'
 import './styles/base.scss'
 import './styles/form.scss'
-// import './styles/footer.scss'
+import './styles/footer.scss'
 import './styles/header.scss'
 
 console.log(checkForName);
@@ -16,5 +17,7 @@ console.log("CHANGE!!");
 
 export {
     checkForName,
-    getAylienAnalysis
+    handleSubmit,
+    getAylienAnalysis,
+    validate
    }

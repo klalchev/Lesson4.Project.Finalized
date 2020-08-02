@@ -1,8 +1,10 @@
 function getAylienAnalysis (event) {
     event.preventDefault()
         const linkEntry = document.getElementById('link').value;
-        validate(linkEntry);
+        Client.validate(linkEntry)
     }
+
+    /*
     const postData = async ( url = '', data = {})=>{
 
         const response = await fetch(url, {
@@ -48,5 +50,6 @@ function getAylienAnalysis (event) {
           alert("not a valid URL entry");
         }
     }
+    */
 
 export {getAylienAnalysis}
