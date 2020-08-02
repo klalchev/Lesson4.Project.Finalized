@@ -32,8 +32,8 @@ app.get('/', function (req, res) {
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000!')
+app.listen(4040, function () {
+    console.log('Example app listening on port 4040!')
 })
 
 // Fetch Aylien API
