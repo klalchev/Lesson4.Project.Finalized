@@ -17,3 +17,5 @@ export const getMockAPI = async (url='')=>{
         console.log("error", error);
     }
 }
+
+//could also use supertest- https://zellwk.com/blog/endpoint-testing/
