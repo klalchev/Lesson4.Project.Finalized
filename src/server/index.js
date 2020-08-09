@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 // const cors = require("cors");
 const mockAPIResponse = require('./mockAPI.js')
 
-projectData = {};
+// projectData = {};
 
 const dotenv = require('dotenv');
 dotenv.config();
@@ -123,9 +123,11 @@ const updateUI = async () => {
 }
 */
 
+
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
 })
+
 
 // POST Route
 app.post('/addSentimentAnalysis', addAnalysis); //post data from app.js to server.js
@@ -136,13 +138,15 @@ function addAnalysis(req, res){ //each route (post or get) callback function has
     }, function(error, response) {
         res.send(response)
     })
-
 }
 
 //Get Route
+/*
 app.get('/all', getData) //In this case get sends the data to the app.js. Every GET request produces a request, which is the data provided by the GET request, and a response, which is the data returned to the GET request
 
 function getData(req, res){
     res.send(projectData)
     console.log(projectData)
 }
+*/
+// export {addAnalysis}
