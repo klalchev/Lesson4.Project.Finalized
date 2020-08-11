@@ -1,3 +1,5 @@
+@use 'base';
+
 form {
     border: 1px solid #545454;
     border-radius: 3px;
@@ -9,4 +11,20 @@ input {
     width: 100%;
     line-height: 16px;
     margin: 10px 0;
+}
+
+section {
+    form {
+        #submit {
+            font-weight: bold;
+            color: snow;
+            background-color: black;
+            &:hover {
+                color: base.$primary-color;
+            }
+            &:visited {
+                color: base.$secondary-color;
+            }
+        }
+    }
 }

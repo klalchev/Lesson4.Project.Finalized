@@ -1,14 +1,43 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: lightgreen;
+$secondary-color: pink;
+$tertiary-color: khaki;
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font: 100% $font-stack;
+    background-color: $primary-color;
 }
 
 main {
     flex: 2;
 }
 
+main {
+    section {
+        form {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+
+.test {
+    background-color: $secondary-color;
+        }
+
+
 section {
     max-width: 800px;
     margin: 50px auto;
+}
+
+section {
+    strong {
+        font-weight: bold;
+        font-size: 1.4em;
+        line-height: 1.6;
+    }
 }
