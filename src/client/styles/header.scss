@@ -1,8 +1,8 @@
-@use 'base';
+@import "colors";
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
-    background-color: base.$tertiary-color;
+    background-color: $tertiary-color;
 }

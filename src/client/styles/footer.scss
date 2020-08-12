@@ -1,5 +1,5 @@
-@use 'base';
+@import "colors";
 
 footer {
-    background-color: base.$tertiary-color;
+    background-color: $tertiary-color;
 }

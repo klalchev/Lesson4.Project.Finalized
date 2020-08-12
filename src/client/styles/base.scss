@@ -1,7 +1,4 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: lightgreen;
-$secondary-color: pink;
-$tertiary-color: khaki;
+@import "colors";
 
 body {
     display: flex;
