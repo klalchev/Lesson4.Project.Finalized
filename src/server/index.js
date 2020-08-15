@@ -130,7 +130,7 @@ app.get('/test', function (req, res) {
 
 
 // POST Route
-app.post('/addSentimentAnalysis', addAnalysis); //post data from app.js to server.js
+app.post('/addSentimentAnalysis', addAnalysis);
 
 function addAnalysis(req, res){ //each route (post or get) callback function has a request (in this case req) and respond (res) parameters. Request requests/accesses data from the app. Respond sends data to the app
     textapi.sentiment({
