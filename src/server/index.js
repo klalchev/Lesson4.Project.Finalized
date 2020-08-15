@@ -142,7 +142,7 @@ function addAnalysis(req, res){ //each route (post or get) callback function has
 
 //Get Route
 /*
-app.get('/all', getData) //In this case get sends the data to the app.js. Every GET request produces a request, which is the data provided by the GET request, and a response, which is the data returned to the GET request
+app.get('/all', getData) //In this case get sends the data to the app.js file. Every GET request produces a request, which is the data provided by the GET request, and a response, which is the data returned to the GET request
 
 function getData(req, res){
     res.send(projectData)
