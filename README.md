@@ -79,8 +79,8 @@ console.log(`Your API key is ${process.env.API_KEY}`);
 ...Not that you would want to do that. This means that our updated API credential settings will look like this:
 ```javascript
 // set aylien API credentials
-// NOTICE that textapi is the name I used, but it is arbitrary. 
-// You could call it aylienapi, nlp, or anything else, 
+// NOTICE that textapi is the name I used, but it is arbitrary.
+// You could call it aylienapi, nlp, or anything else,
 //   just make sure to make that change universally!
 var textapi = new aylien({
   application_id: process.env.API_ID,
@@ -90,7 +90,7 @@ var textapi = new aylien({
 
 ### Step 5: Using the API
 
-We're ready to go! The API has a lot of different endpoints you can take a look at [here](https://docs.aylien.com/textapi/endpoints/#api-endpoints). And you can see how using the SDK simplifies the requests we need to make. 
+We're ready to go! The API has a lot of different endpoints you can take a look at [here](https://docs.aylien.com/textapi/endpoints/#api-endpoints). And you can see how using the SDK simplifies the requests we need to make.
 
 I won't provide further examples here, as it's up to you to create the various requests and make sure your server is set up appropriately.
 
@@ -106,3 +106,33 @@ Once you are hooked up to the Aylien API, you are most of the way there! Along w
 ## Deploying
 
 A great step to take with your finished project would be to deploy it! Unfortunately its a bit out of scope for me to explain too much about how to do that here, but checkout [Netlify](https://www.netlify.com/) or [Heroku](https://www.heroku.com/) for some really intuitive free hosting options.
+
+
+# Evaluate a news article with Natural Language Processing
+
+## **Project Overview**
+This project requires you to create an app that should make a successful call to the Aylien api on form submission. The API should return a response evaluating a news article with natural language processing.
+
+### Installation Instructions:
+Visit the package.json file to see the dependencies that would need to be installed before running the project
+
+### Configuration Instructions:
+Visit the webpack.dev.js and webpack.prod.js to see the modules and plugins that need to be configured respectively in a dev and prod environment before running the app
+
+### Scripts:
++ To start the project run the command `<npm start>` in the command center. This will start the server in a prod environment
++ To start the project in a dev environment, run the command `<npm run build-dev>`
++ To recreate the dist folder, run the command `<npm run build-prod>` from the command center
++ If you are interested in testing the app functions, run the command `<npm test>', which uses the Jest framework for testing
+
+### Description:
+The app fetches data from the Aylien.com API and shows a semantic analysis of a news article once a URL is typed and the submit button is pressed. The app validates the form input and checks for an URL or returns the alert- `not a valid url`.
+
+### Project challenges:
++ Using SDK to make requests to the API
++ Using Jest framework to test js functions
++ Navigating between client and server side
+
+### License: MIT
+
+### Author: Kostadin Lalchev, all rights reserved.

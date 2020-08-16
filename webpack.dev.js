@@ -12,6 +12,18 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     stats: 'verbose',
+    devServer: {
+        // webpack-dev-server setup
+        host: 'localhost',
+        port: 8080,
+        proxy: {
+            //The frontend code uses the backend to store data. webpack-dev-server fails at this.
+            //Hence redirecting frontend api requests to a different port. DevServer proxy will significantly speed up your debug procedures
+            context: () => true,
+            target: "http://localhost:4040/",
+            secure: false
+        }
+    },
     module: {
         rules: [
             {
